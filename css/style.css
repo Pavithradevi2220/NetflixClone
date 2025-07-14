@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+
+}
+.poster{
+    width: 100%;
+    object-fit: contain;
+    max-height: 250px;
+    transition: transform 550ms;
+    margin-right: 10px;
+
+}
+.row_poster{
+    display: flex;
+    margin: 10px;
+    overflow-x:scroll ;
+    overflow-y: hidden;
+    padding: 15px;
+
+}
+.poster:hover{
+    transform: scale(1.08);
+
+}
+.row_poster::-webkit-scrollbar{
+    display: none;
+
+}
+.poster_larger{
+    max-height: 250px;
+
+}
+.row{
+    color:white;
+    margin-left: 10px;
+}
+.banner{
+    background: url(../images/bg.webp);
+    background-size: cover;
+    color: white;
+    object-fit: contain;
+    height: 520px;
+
+}
+.banner_content{
+    margin-left: 30px;
+    padding-top: 140px;
+    height: 200px;
+
+}
+h1{
+    font-size: 50px;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+.banner_para{
+    width: 45rem;
+    line-height: 1.4;
+    padding-top: 1rem;
+    font-size: .8rem;
+    max-width: 350px;
+    height: 200px;
+
+}
+.banner_button{
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-left: 2rem;
+    padding-top: .6rem;
+    padding-right: 2rem;
+    padding-bottom: .6rem;
+    border: none;
+    margin-right: 5px;
+    outline: none;
+    background-color:rgba(58, 58, 58, .6);
+}
+.nav_logo{
+    width: 80px;
+    object-fit: contain;
+}
+.nav_smile{
+    width: 30px;
+    object-fit: contain;
+
+}
+.nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+.banner_fade{
+    background: linear-gradient(180deg,transparent,rgba(74, 74, 74, 0.6),#111);
+    height: 7.4rem ;
+    
+}
